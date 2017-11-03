@@ -11,6 +11,5 @@ valhalla_validate_transit \
   --config $CONF_DIR/valhalla.json \
   validate \
   ${TRANSIT_TEST_FILE}
-catch_exception
 
 echo "[SUCCESS] valhalla_validate_transit completed!"

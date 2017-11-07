@@ -18,7 +18,7 @@ valhalla_build_timezones $CONF_DIR/valhalla.json
 
 echo "Action: ${1}"
 
-if [ $1 == "convert" ]; then
+if [ "convert" = $1 ]; then
   echo "[INFO] Building tiles... ${TRANSIT_TILE_DIR}"
   cwd=`pwd`
   cd /Users/irees/mapzen/transitland-datastore && bundle exec rails runner lib/proto/tile_export.rb $TRANSIT_TILE_DIR && cd $cwd
@@ -34,7 +34,7 @@ if [ $1 == "convert" ]; then
     ${TRANSITLAND_FEED}
 fi
 
-if [ $1 == "build" ]; then
+if [ "build" = $1 ]; then
   # build transit tiles
   echo "[INFO] Building tiles... "
   valhalla_build_transit \

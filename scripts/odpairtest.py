@@ -16,8 +16,8 @@ ODPAIRS = [
 VALHALLA_HOST = 'http://localhost:8002'
 
 VALHALLA_ENDPOINTS = {
-    'stationssp': 'http://localhost:18002',
-    'master': 'http://localhost:18003',
+    'convert': 'http://localhost:8002',
+    'build': 'http://localhost:18003',
 }
 
 TRANSITLAND_ENDPOINT = 'http://localhost:3000'
